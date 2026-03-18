@@ -1,4 +1,4 @@
-# Anti-slop profile for blog writing, essays, and articles.
+# Unslop profile for blog writing, essays, and articles.
 
 Generated from 100 samples. Use as a Claude Code skill, CLAUDE.md entry, or system prompt.
 

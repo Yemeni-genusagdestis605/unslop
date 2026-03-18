@@ -1,4 +1,4 @@
-# Anti-slop profile for startup SaaS landing pages.
+# Unslop profile for startup SaaS landing pages.
 
 Generated from 20 HTML samples and screenshots.
 
